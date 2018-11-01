@@ -50,13 +50,14 @@
 
     <script type="text/javascript">
         var clock;
-        
+        //jQuery function
         $(document).ready(function() {
 
             var date = new Date("Aug 13, 2017 07:00:00");
             var now = new Date();
             var diff = (date.getTime()/1000) - (now.getTime()/1000);
             
+            //jQuery clock
             clock = $('.clock').FlipClock(diff, {
                 clockFace: 'HourlyCounter',
                 countdown: true,
